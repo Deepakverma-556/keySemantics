@@ -1,4 +1,22 @@
 import Description from "../common/Description";
+import fileServer from '../lottie/file server.json'
+import search from '../lottie/search (1).json'
+import serverSearch from '../lottie/server search (1).json'
+
+export const KEY_SEMANTIC_WORK_LIST = [
+    {
+        myLottie: {fileServer},
+        description: <Description text='Websites, documents and images are pushed into our Analysis API. ' />
+    },
+    {
+        myLottie: {search},
+        description: <Description text='Using highly optimized and trained AI models, we analyze, vectorize and extract semantic information and relations from your content. ' />
+    },
+    {
+        myLottie: {serverSearch},
+        description: <Description text='Our enterprise-grade semantic search engine allows you to query your content in many ways. You’ll be amazed by the speed, precision and relevance of the results! ' />
+    },
+]
 
 export const KEY_ACCORDION_LIST = [
     {
