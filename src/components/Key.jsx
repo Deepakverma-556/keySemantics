@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState, useRef} from 'react'
 import SubHeading from '../common/SubHeading'
-import { KEY_LIST } from '../utils/helper'
+import { KEY_ACCORDION_LIST, KEY_LIST } from '../utils/helper'
+import { AccArrow } from '../utils/icons';
 
 const AccordionItem = ({ handleToggle, active, obj }) => {
   const contentEl = useRef();
@@ -16,7 +17,7 @@ const AccordionItem = ({ handleToggle, active, obj }) => {
           <p className="font-helvetica text-2xl max-md:text-xl max-sm:text-lg leading-[26px] text-deepBlue">{title}</p>
         </div>
         <div className={`transition-transform duration-500 ${active === title ? 'rotate-180' : 'rotate-0'}`}>
-          <AccDownArrow />
+          <AccArrow/>
         </div>
       </div>
       <div title={`content-${title}`} ref={contentEl} className={`rc-collapse ${active === title ? 'show' : ''}`} style={{
@@ -50,7 +51,13 @@ const Key = () => {
                 {KEY_LIST.map((obj, i) => (
                   <ul key={i} className='pt-2'>
                     <li className='ml-6 list-disc'>{obj}</li>
-                  </ul>
+                  </ul>,
+                  <div>
+                    {
+                      KEY_ACCORDION_LIST.map((obj, index) => (
+                        <AccordionItem key={index} active={active} handleToggle={handleToggle} obj={obj} />
+                    ))}
+                  </div>
                 ))}
               </div>
             </div>
