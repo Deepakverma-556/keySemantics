@@ -1,4 +1,5 @@
 import React from 'react'
+import SubHeading from '../common/SubHeading'
 
 const Key = () => {
   return (
@@ -10,6 +11,7 @@ const Key = () => {
           </div>
           <div className='w-1/2 px-3'>
             <div>
+              <SubHeading text='Key Q&A' />
             </div>
           </div>
         </div>
