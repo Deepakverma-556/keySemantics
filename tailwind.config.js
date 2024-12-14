@@ -17,7 +17,8 @@ module.exports = {
         sky: '#48c3d7',
         purple: '#7c7db9',
         darkBlue: '#111235',
-        gary:'#C9CAD4'
+        gary: '#C9CAD4',
+        lightGray:'#f7f9fb'
       },
 
       fontFamily: {

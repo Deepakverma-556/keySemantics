@@ -1,8 +1,10 @@
 import React from 'react'
-
-const KeySemantics = () => {
+import infography from '../lottie/infography.json'
+import Lottie from 'lottie-react'
+  
+const KeySemantics = ({myClass}) => {
   return (
-    <div>KeySemantics</div>
+    <Lottie animationData={infography} classID={`${myClass}`} />
   )
 }
 

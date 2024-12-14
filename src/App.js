@@ -13,7 +13,6 @@ function App() {
     <>
       <Hero />
       <KeySemanticWork />
-      <KeySemantics />
       <Key />
       <HeadlessFedrated />
       <DataSecurity />
