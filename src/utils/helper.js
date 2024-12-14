@@ -49,3 +49,9 @@ export const KEY_LIST = [
     <Description text='Seamlessly integrated into the Semantic Search experience' />,
     <Description text='LLM-powered Question Answering' />,
 ]
+
+export const HEADLESS_LIST = [
+    'API-First / Headless => integrate seamlessly with your applications',
+    "Combine data from multiple sources",
+    "Push / Crawl => Your choice: Push your data to our APIs or let our crawlers crawl your content",
+]
