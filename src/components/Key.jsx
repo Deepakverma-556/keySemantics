@@ -1,31 +1,34 @@
-import React, {useState, useRef} from 'react'
+import React, { useState, useRef } from 'react'
 import SubHeading from '../common/SubHeading'
 import { KEY_ACCORDION_LIST, KEY_LIST } from '../utils/helper'
 import { AccArrow } from '../utils/icons';
 
-const AccordionItem = ({ handleToggle, active, obj }) => {
+const AccordionItem = ({ handleToggle, active, obj,index }) => {
   const contentEl = useRef();
-  const { title, description, icon } = obj;
+  const { title, firstDescription, secondDescription, thirdDescription, colorfulPainting, colorfulPaintingAlt, waterDropPainting, waterDropPaintingAlt } = obj;
 
   return (
-    <div className=" overflow-hidden border border-lightGray rounded mt-6 max-md:mt-5 max-sm:mt-4 p-[14px] max-md:p-3 max-sm:p-2 transition-all duration-300 group hover:shadow-[0px_0px_13.9px_0px] hover:shadow-light max-lg:max-w-[700px] mx-auto">
-      <div role="button" aria-expanded={active === title} aria-controls={`content-${title}`}
+    <div className=" overflow-hidden border-t border-b border-gray py-4 max-lg:max-w-[700px] mx-auto mt-4">
+      <div role="button" aria-expanded={active === index} aria-controls={`content-${title}`}
         className={` flex items-center cursor-pointer justify-between ${active === title ? 'active' : ''}`}
-        onClick={() => handleToggle(title)}>
-        <div className='flex items-center gap-6 max-sm:gap-2'>
-          <div className={`h-16 w-16 max-md:h-14 max-md:w-14 rounded-full  flex items-center justify-center transition-all duration-300 ${active === title ? 'bg-prussianBlue my-icon' : 'bg-lightBlue '} `}>{icon}</div>
-          <p className="font-helvetica text-2xl max-md:text-xl max-sm:text-lg leading-[26px] text-deepBlue">{title}</p>
-        </div>
-        <div className={`transition-transform duration-500 ${active === title ? 'rotate-180' : 'rotate-0'}`}>
-          <AccArrow/>
+        onClick={() => handleToggle(index)}>
+        <p className="font-medium text-lg leading-7 text-blue">{title}</p>
+        <div className={`transition-transform duration-500 ${active === index ? 'rotate-180' : 'rotate-0'}`}>
+          <AccArrow />
         </div>
       </div>
-      <div title={`content-${title}`} ref={contentEl} className={`rc-collapse ${active === title ? 'show' : ''}`} style={{
-        height: active === title ? `${contentEl.current.scrollHeight}px` : '0px',
+      <div title={`content-${title}`} ref={contentEl} className={`rc-collapse ${active === index ? 'show' : ''}`} style={{
+        height: active === index ? `${contentEl.current.scrollHeight}px` : '0px',
         transition: 'height 0.3s ease-out',
       }}
       >
-        <p className="pl-[88px] max-md:pl-20 max-sm:pl-16 pt-3 max-sm:pt-1">{description}</p>
+        <div className="pt-4 pr-4">{firstDescription}</div>
+        <div className='pr-4 pt-2 pb-4'>{secondDescription}</div>
+        <div className='flex items-center gap-4'>
+          <img src={colorfulPainting} alt={colorfulPaintingAlt} className='h-[150px] object-cover' />
+          <img src={waterDropPainting} alt={waterDropPaintingAlt} className='h-[150px] object-cover' />
+        </div>
+        <div className='pr-4 pt-4'>{thirdDescription}</div>
       </div>
     </div>
   );
@@ -34,31 +37,31 @@ const AccordionItem = ({ handleToggle, active, obj }) => {
 const Key = () => {
   const [active, setActive] = useState(null);
 
-  const handleToggle = (title) => {
-    setActive((prev) => (prev === title ? null : title));
+  const handleToggle = (index) => {
+    setActive((prev) => (prev === index ? null : index));
   };
   return (
     <div className='pb-[148px] pt-5'>
       <div className='max-w-[1232px] mx-auto px-4'>
         <div className='flex flex-wrap -mx-3'>
           <div className='w-1/2 px-3'>
-            <img src="/assets/images/webp/working-girl.webp" alt="working-girl" className='h-[337px]' />
+            <img src="/assets/images/webp/working-girl.webp" alt="working-girl" className='h-[337px] sticky top-0 object-cover rounded-lg' />
           </div>
           <div className='w-1/2 px-3'>
-            <div className='h-[337px]'>
-              <SubHeading text='Key Q&A' />
+            <div className=''>
+              <SubHeading text='Key Q&A' myClass='text-blue' />
               <div>
                 {KEY_LIST.map((obj, i) => (
                   <ul key={i} className='pt-2'>
                     <li className='ml-6 list-disc'>{obj}</li>
-                  </ul>,
-                  <div>
-                    {
-                      KEY_ACCORDION_LIST.map((obj, index) => (
-                        <AccordionItem key={index} active={active} handleToggle={handleToggle} obj={obj} />
-                    ))}
-                  </div>
+                  </ul>
                 ))}
+              </div>
+              <div>
+                {
+                  KEY_ACCORDION_LIST.map((obj, index) => (
+                    <AccordionItem key={index} active={active} handleToggle={handleToggle} obj={obj} index={index} />
+                  ))}
               </div>
             </div>
           </div>
