@@ -5,7 +5,7 @@ const KeySemanticWork = () => {
   return (
     <div>
       <div className='max-w-[1058px] mx-auto px-4 pt-24 pb-6'>
-        <SubHeading text='How does KeySemantic work?' myClass='text-blue' />
+        <SubHeading text='How does KeySemantic work?' myClass='text-blue text-center' />
         <div className='pt-14'>
 
         </div>
