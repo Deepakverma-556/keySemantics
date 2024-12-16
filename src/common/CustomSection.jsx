@@ -16,7 +16,7 @@ const CustomSection = ({ myClass, text, myAlt, myImage, myList }) => {
                 ))
               }
             </ul>
-            <CustomButton text='Get a demo' myClass='py-3 px-4 border border-blue text-blue hover:text-white after:bg-blue mt-6 max-sm:mt-5 max-md:mx-auto' />
+            <CustomButton text='Get a demo' myClass='text-sm py-3 px-4 border border-blue text-blue hover:text-white after:bg-blue mt-6 max-sm:mt-5 max-md:mx-auto' />
           </div>
           <div className='w-[51%] px-3 max-md:w-full max-md:pt-6'>
             <img src={myImage} alt={myAlt} className='h-[337px] max-md:mx-auto object-cover max-sm:h-60' />

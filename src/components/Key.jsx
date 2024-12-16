@@ -61,7 +61,7 @@ const Key = () => {
               KEY_ACCORDION_LIST.map((obj, index) => (
                 <AccordionItem key={index} active={active} handleToggle={handleToggle} obj={obj} index={index} />
               ))}
-            <CustomButton text='Get a demo' myClass='py-3 px-4 border border-blue text-blue hover:text-white after:bg-blue mt-6 max-sm:mt-5 max-md:mx-auto' />
+            <CustomButton text='Get a demo' myClass='text-sm py-3 px-4 border border-blue text-blue hover:text-white after:bg-blue mt-6 max-sm:mt-5 max-md:mx-auto' />
           </div>
         </div>
       </div>
