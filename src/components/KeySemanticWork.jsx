@@ -5,7 +5,6 @@ import Lottie from 'lottie-react'
 
 const KeySemanticWork = () => {
   return (
-    <div>
       <div className='max-w-[1058px] mx-auto px-4 pt-24 max-lg:pt-20 max-md:pt-16 max-sm:pt-12'>
         <SubHeading text='How does KeySemantic work?' myClass='text-blue text-center' />
         <div className='pt-14 max-lg:pt-8 max-md:pt-0 '>
@@ -19,7 +18,6 @@ const KeySemanticWork = () => {
           </div>
         </div>
       </div>
-    </div>
   )
 }
 
