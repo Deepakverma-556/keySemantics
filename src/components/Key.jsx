@@ -3,7 +3,6 @@ import SubHeading from '../common/SubHeading'
 import { KEY_ACCORDION_LIST, KEY_LIST } from '../utils/helper'
 import { AccArrow } from '../utils/icons';
 import CustomButton from '../common/CustomButton';
-import KeySemantics from './KeySemantics';
 
 const AccordionItem = ({ handleToggle, active, obj, index }) => {
   const contentEl = useRef();
@@ -43,15 +42,14 @@ const Key = () => {
     setActive((prev) => (prev === index ? null : index));
   };
   return (
-    <div className='pb-[148px] max-md:pb-36 max-sm:pb-12 max pt-[458px] bg-lightGray relative'>
-      {/* <KeySemantics myClass='absolute -top-1/2 translate-y-[38%]' /> */}
+    <div className='pb-[148px] max-lg:pb-20 max-md:pb-16 max-sm:pb-12 max bg-lightGray'>
       <div className='max-w-[1232px] mx-auto px-4 '>
         <div className='flex flex-wrap -mx-3'>
           <div className='w-1/2 px-3 max-md:w-full'>
             <img src="/assets/images/webp/working-girl.webp" alt="working-girl" className='h-[337px] max-sm:h-60 sticky top-0 object-cover rounded-lg max-md:mx-auto' />
           </div>
           <div className='w-1/2 px-3 max-md:w-full max-md:pt-6'>
-            <SubHeading text='Key Q&A' myClass='text-blue max-md:text-center' />
+            <SubHeading text='Key Q&A' myClass='text-blue max-md:text-center ' />
             <div className='pb-4'>
               {KEY_LIST.map((obj, i) => (
                 <ul key={i} className='pt-2 max-md:pt-2'>

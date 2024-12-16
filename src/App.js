@@ -6,12 +6,14 @@ import HeadlessFedrated from './components/HeadlessFederated';
 import DataSecurity from './components/DataSecurity';
 import KeySemanticForm from './components/KeySemanticsForm';
 import BottomBar from './components/BottomBar';
+import KeySemantics from './components/KeySemantics';
 
 function App() {
   return (
     <>
       <Hero />
       <KeySemanticWork />
+      <KeySemantics/>
       <Key />
       <HeadlessFedrated />
       <DataSecurity />
