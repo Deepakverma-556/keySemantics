@@ -8,8 +8,6 @@ module.exports = {
       backgroundImage: {
         hero: "url('/public/assets/images/webp/hero-bg.webp')",
         heroShape: "url('/public/assets/images/webp/bg-hero-shape.webp')",
-        openCurly: "url('/public/assets/images/webp/open-curly-braces.webp')",
-        closeCurly: "url('/public/assets/images/webp/close-curly-braces.webp')",
       },
 
       colors: {
