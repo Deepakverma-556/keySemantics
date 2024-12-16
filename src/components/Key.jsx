@@ -45,10 +45,10 @@ const Key = () => {
     <div className='pb-[148px] max-lg:pb-20 max-md:pb-16 max-sm:pb-12 max bg-lightGray'>
       <div className='max-w-[1232px] mx-auto px-4 '>
         <div className='flex flex-wrap -mx-3'>
-          <div className='w-1/2 px-3 max-md:w-full'>
+          <div className='w-[51%] px-3 max-md:w-full'>
             <img src="/assets/images/webp/working-girl.webp" alt="working-girl" className='h-[337px] max-sm:h-60 sticky top-0 object-cover rounded-lg max-md:mx-auto' />
           </div>
-          <div className='w-1/2 px-3 max-md:w-full max-md:pt-6'>
+          <div className='w-[49%] px-3 max-md:w-full max-md:pt-6'>
             <SubHeading text='Key Q&A' myClass='text-blue max-md:text-center ' />
             <div className='pb-4'>
               {KEY_LIST.map((obj, i) => (
