@@ -4,8 +4,8 @@ import SubHeading from '../common/SubHeading'
 
 const Hero = () => {
     return (
-        <div className='bg-hero bg-cover bg-no-repeat bg-center pt-[49px] pb-[287px] max-lg:pb-20 max-md:pb-16 max-sm:pb-12 max-lg:pt-8 max-md:pt-4 relative'>
-            <div className='bg-heroShape bg-cover bg-no-repeat bg-center h-[741px] w-[498px] flex absolute left-1/2 bottom-0 -translate-x-1/2 max-lg:h-[600px] max-md:w-[300px] max-md:h-[420px] max-sm:w-48 max-sm:h-[200px]'></div>
+        <div className='bg-hero bg-cover bg-no-repeat bg-center pt-[49px] pb-[287px] max-lg:pb-20 max-md:pb-16 max-sm:pb-12 max-lg:pt-8 max-md:pt-4 relative bg-lightGray'>
+            <div className='bg-heroShape bg-cover bg-no-repeat bg-center h-[741px] w-[498px] flex absolute left-1/2 bottom-0 -translate-x-1/2 max-lg:h-[480px] max-lg:w-[300px] max-md:w-[200px] max-md:h-[370px] max-sm:w-40 max-sm:h-[250px]'></div>
             <div className='max-w-[1232px] mx-auto px-4 relative z-10'>
                 <div className='flex items-center justify-between'>
                     <a href="#logo"><img src="/assets/images/webp/logo.webp" alt="logo" className='h-10 max-md:h-8 max-sm:h-7' /></a>
