@@ -34,7 +34,7 @@ const KeySemanticsForm = () => {
         <img src="/assets/images/webp/close-curly-braces.webp" alt="close-curly-braces" className='absolute h-[411px] max-lg:h-80 max-md:h-60 max-sm:h-40 bottom-0 right-0 -z-0' />
         <SubHeading text='How does KeySemantics work' myClass='text-white text-center relative z-10' />
         <Description text='Request a demo for your team and let us show you how KeySemantics can help your company' myClass='text-white text-center pt-2 relative z-10' />
-        <form onSubmit={handleSubmit} action="" className='flex flex-col pt-16 max-lg:pt-12 max-sm:pt-8 '>
+        <form onSubmit={handleSubmit} action="" className='flex flex-col pt-16 max-lg:pt-12 max-sm:pt-6 '>
           <CustomInput customOnChange={handleChange} customValue={formValue.name} customId='name' myType='text' customPlaceholder='Name' myRequired='required' />
           <CustomInput customOnChange={handleChange} customValue={formValue.email} customId='email' myType='email' customPlaceholder='Email' myRequired='required' />
           <CustomInput customOnChange={handleChange} customValue={formValue.company} customId='company' myType='text' customPlaceholder='Company' myRequired='required' />
