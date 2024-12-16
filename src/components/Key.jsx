@@ -44,7 +44,7 @@ const Key = () => {
   };
   return (
     <div className='pb-[148px] max-md:pb-36 max-sm:pb-12 max pt-[458px] bg-lightGray relative'>
-      <KeySemantics myClass='absolute -top-1/2 translate-y-[38%]' />
+      {/* <KeySemantics myClass='absolute -top-1/2 translate-y-[38%]' /> */}
       <div className='max-w-[1232px] mx-auto px-4 '>
         <div className='flex flex-wrap -mx-3'>
           <div className='w-1/2 px-3 max-md:w-full'>
