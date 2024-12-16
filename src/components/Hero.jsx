@@ -1,5 +1,6 @@
 import React from 'react'
 import CustomButton from '../common/CustomButton'
+import SubHeading from '../common/SubHeading'
 
 const Hero = () => {
     return (
@@ -10,7 +11,7 @@ const Hero = () => {
                     <a href="#logo"><img src="/assets/images/webp/logo.webp" alt="logo" className='h-10 max-md:h-8 max-sm:h-7' /></a>
                     <CustomButton text='Request a demo' myClass='py-3 px-4 border border-blue text-blue hover:text-white after:bg-blue ' />
                 </div>
-                <h1 className='font-bold text-[64px] leading-[72px] text-blue text-center max-w-[700px] mx-auto pt-[198px] max-lg:pt-36 max-md:text-5xl max-sm:text-3xl max-md:pt-20 max-sm:pt-12 max-sm:max-w-80 max-sm:leading-8'>AI-Powered Search as a Service</h1>
+                <SubHeading text='AI-Powered Search as a Service' myClass='text-[64px] text-blue text-center max-w-[700px] mx-auto pt-[198px] max-lg:pt-36 max-md:text-5xl max-sm:text-3xl max-md:pt-20 max-sm:pt-12 max-sm:max-w-80 max-sm:leading-8' />
                 <p className='font-medium text-2xl leading-8 text-blue text-center pt-10 max-md:text-[22px] max-md:pt-5 max-sm:text-lg max-sm:pt-2 pb-12 max-md:pb-8 max-sm:pb-3'>Unlock your content with KeySemantics.</p>
                 <CustomButton text='Get started' myClass='font-medium py-5 px-8 bg-blue text-white after:bg-sky mx-auto' />
             </div>

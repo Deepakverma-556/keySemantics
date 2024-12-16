@@ -69,12 +69,12 @@ export const KEY_LIST = [
 ]
 
 export const HEADLESS_LIST = [
-    'API-First / Headless => integrate seamlessly with your applications',
-    "Combine data from multiple sources",
-    "Push / Crawl => Your choice: Push your data to our APIs or let our crawlers crawl your content",
+    <Description text='API-First / Headless => integrate seamlessly with your applications' />,
+    <Description text="Combine data from multiple sources"/>,
+    <Description text="Push / Crawl => Your choice: Push your data to our APIs or let our crawlers crawl your content"/>,
 ]
 
 export const DATA_SECURITY_LIST = [
-    "SaaS => we provide the search infrastructure so you can focus on your applications",
-    "Hosted in a Swiss datacenter by Microsoft",
+    <Description text="SaaS => we provide the search infrastructure so you can focus on your applications"/>,
+    <Description text="Hosted in a Swiss datacenter by Microsoft"/>,
 ]
