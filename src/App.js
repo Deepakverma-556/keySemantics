@@ -1,7 +1,6 @@
 import './App.css';
 import Hero from './components/Hero';
 import KeySemanticWork from './components/KeySemanticWork';
-import KeySemantics from './components/KeySemantics';
 import Key from './components/Key';
 import HeadlessFedrated from './components/HeadlessFederated';
 import DataSecurity from './components/DataSecurity';

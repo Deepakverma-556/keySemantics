@@ -5,15 +5,15 @@ import serverSearch from '../lottie/server search (1).json'
 
 export const KEY_SEMANTIC_WORK_LIST = [
     {
-        myLottie: {fileServer},
+        myLottie: fileServer,
         description: <Description myClass='text-center' text='Websites, documents and images are pushed into our Analysis API. ' />
     },
     {
-        myLottie: {search},
+        myLottie: search,
         description: <Description myClass='text-center' text='Using highly optimized and trained AI models, we analyze, vectorize and extract semantic information and relations from your content. ' />
     },
     {
-        myLottie: {serverSearch},
+        myLottie: serverSearch,
         description: <Description myClass='text-center' text='Our enterprise-grade semantic search engine allows you to query your content in many ways. You’ll be amazed by the speed, precision and relevance of the results! ' />
     },
 ]

@@ -43,11 +43,9 @@ const Key = () => {
     setActive((prev) => (prev === index ? null : index));
   };
   return (
-    <div className='pb-[148px] max-md:pb-36 max-sm:pb-12 max pt-[400px] bg-lightGray relative'>
-      <div className='absolute -top-1/2 pb-[164px]'>
-        <KeySemantics />
-      </div>
-      <div className='max-w-[1232px] mx-auto px-4'>
+    <div className='pb-[148px] max-md:pb-36 max-sm:pb-12 max pt-[458px] bg-lightGray relative'>
+      <KeySemantics myClass='absolute -top-1/2 translate-y-[38%]' />
+      <div className='max-w-[1232px] mx-auto px-4 '>
         <div className='flex flex-wrap -mx-3'>
           <div className='w-1/2 px-3 max-md:w-full'>
             <img src="/assets/images/webp/working-girl.webp" alt="working-girl" className='h-[337px] max-sm:h-60 sticky top-0 object-cover rounded-lg max-md:mx-auto' />

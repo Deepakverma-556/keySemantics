@@ -1,10 +1,12 @@
 import React from 'react'
 import infography from '../lottie/infography.json'
 import Lottie from 'lottie-react'
-  
-const KeySemantics = ({myClass}) => {
+
+const KeySemantics = ({ myClass }) => {
   return (
-    <Lottie animationData={infography} classID={`${myClass}`} />
+    <div className='max-w-[1232px] mx-auto px-4'>
+      <Lottie animationData={infography} className={`${myClass}`} />
+    </div>
   )
 }
 
