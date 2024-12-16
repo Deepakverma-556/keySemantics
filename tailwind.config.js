@@ -18,7 +18,7 @@ module.exports = {
         purple: '#7c7db9',
         darkBlue: '#111235',
         gary: '#C9CAD4',
-        lightGray:'#f7f9fb'
+        lightGray:'#f7f9fb',
       },
 
       fontFamily: {
