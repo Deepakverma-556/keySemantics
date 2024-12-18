@@ -39,8 +39,8 @@ const KeySemanticsForm = () => {
           <CustomInput customOnChange={handleChange} customValue={formValue.email} customId='email' myType='email' customPlaceholder='Email' myRequired='required' />
           <CustomInput customOnChange={handleChange} customValue={formValue.company} customId='company' myType='text' customPlaceholder='Company' myRequired='required' />
           <CustomInput customOnChange={handleChange} customValue={formValue.phone} customId='phone' myType='number' customPlaceholder='Phone (optional)' minimum="min=0" myClass='[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none' />
-          <Description myClass='text-purple text-center pt-3 relative z-10 text-[10px] max-sm:text-[10px] leading-[14px]' text='By submitting my contact information I agree to the KeySemantics Privacy Policy' />
-          <CustomButton text='Request a demo' myClass=' text-sm py-5 bg-sky px-8 text-white hover:text-black after:bg-white mt-6 max-sm:mt-5 mx-auto' />
+          <Description myClass='text-purple text-center pt-3 relative z-10 !text-[10px] !max-sm:text-[10px] leading-[14px]' text='By submitting my contact information I agree to the KeySemantics Privacy Policy' />
+          <CustomButton text='Request a demo' myClass=' text-sm py-4 bg-sky px-[32.19px] text-white hover:text-black after:bg-white mt-6 max-sm:mt-5 mx-auto' />
         </form>
       </div>
     </div>

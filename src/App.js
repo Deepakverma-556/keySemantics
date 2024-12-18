@@ -7,6 +7,7 @@ import DataSecurity from './components/DataSecurity';
 import KeySemanticForm from './components/KeySemanticsForm';
 import BottomBar from './components/BottomBar';
 import KeySemantics from './components/KeySemantics';
+import BackToTop from './common/BackToTop';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <DataSecurity />
       <KeySemanticForm />
       <BottomBar />
+      <BackToTop/>
     </>
   );
 }

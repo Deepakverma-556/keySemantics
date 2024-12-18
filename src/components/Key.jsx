@@ -48,7 +48,7 @@ const Key = () => {
           <div className='w-[51%] px-3 max-md:w-full'>
             <img src="/assets/images/webp/working-girl.webp" alt="working-girl" className='h-[337px] max-sm:h-60 sticky top-0 object-cover rounded-lg max-md:mx-auto' />
           </div>
-          <div className='w-[49%] px-3 max-md:w-full max-md:pt-6'>
+          <div className='w-[49%] px-3 lg:pl-6 max-md:w-full max-md:pt-6'>
             <SubHeading text='Key Q&A' myClass='text-blue max-md:text-center ' />
             <div className='pb-4'>
               {KEY_LIST.map((obj, i) => (
@@ -61,7 +61,7 @@ const Key = () => {
               KEY_ACCORDION_LIST.map((obj, index) => (
                 <AccordionItem key={index} active={active} handleToggle={handleToggle} obj={obj} index={index} />
               ))}
-            <CustomButton text='Get a demo' myClass='text-sm py-3 px-4 border border-blue text-blue hover:text-white after:bg-blue mt-6 max-sm:mt-5 max-md:mx-auto' />
+            <CustomButton text='Get a demo' myClass='text-sm py-[11.34px] px-[14.53px] border border-blue text-blue hover:text-white after:bg-blue mt-6 max-sm:mt-5 max-md:mx-auto' />
           </div>
         </div>
       </div>
